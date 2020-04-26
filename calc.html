@@ -1,0 +1,75 @@
+<html>
+<head>
+<script src="jquery.js"></script>
+
+<style>
+  table{
+   margin: auto;
+   background-color: rgb(230, 230, 227);
+   border-style: outset;
+   border-radius: 10px;
+  }
+
+button {
+font-size: 200%;
+width: 40px;
+}
+
+input {
+font-size: 14px;
+height: 40px;
+text-align: right;
+
+}
+
+#clearButton{
+  background-color: red;
+}
+
+.op{
+  background-color:  rgb(193, 193, 199);
+}
+</style>
+</head>
+
+<body>
+
+<table>
+<tr>
+  <td colspan="4"><input id="display" name="display" disabled></input></td>
+</tr>
+
+<tr>
+  <td><button class="num" id="button1" value="1">1</button></td>
+  <td><button class="num" id="button2" value="2">2</button></td>
+  <td><button class="num" id="button3" value="3">3</button></td>
+  <td><button class="op"  id="addButton">+</button></td>
+</tr>
+<tr>
+  <td><button class="num" id="button4" value="4">4</button></td>
+  <td><button class="num" id="button5" value="5">5</button></td>
+  <td><button class="num" id="button6" value="6">6</button></td>
+  <td><button class="op"  id="subtractButton">-</button></td>
+</tr>
+<tr>
+  <td><button class="num" id="button7" value="7">7</button></td>
+  <td><button class="num" id="button8" value="8">8</button></td>
+  <td><button class="num" id="button9" value="9">9</button></td>
+  <td><button class="op"  id="multiplyButton">*</button></td>
+</tr>
+<tr>
+  <td><button id="clearButton">C</button></td>
+  <td><button class="num" id="button0" value="0">0</button></td>
+  <td><button class="op" id="equalsButton">=</button></td>
+  <td><button class="op" id="divideButton">&#247;</button></td>
+</tr>
+
+</table>
+
+<span id='output'><!-- Use this span for writing debug messages or anything else you think will help! --></span>
+
+<script src="calc.js"></script>
+
+</body>
+
+</html>
